@@ -1,0 +1,12 @@
+import os
+
+os.system("clear")
+
+idade: int = 20
+
+if idade > 18:
+    print("Maior de idade.")
+else:
+    print("Menor de idade.")
+
+print("=== FIM ===")        
