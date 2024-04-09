@@ -12,7 +12,11 @@ senha = str(input("Digite sua senha: "))
 
 os.system("clear")
 
-if login == loginCad and senha == senhaCad:
-    print("Bem-Vindo!")
-else:
+while login != loginCad or senha != senhaCad:
     print("Login ou senha inválidos.")
+    login = str(input("Digite seu login: "))
+    senha = str(input("Digite sua senha: "))
+
+os.system("clear")
+
+print("Bem-Vindo!")
