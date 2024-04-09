@@ -2,11 +2,6 @@ import os
 
 os.system("clear")
 
-valor1 = int
-valor2 = int
-valor3 = int
-valor4 = int
-valor5 = int
 notas = []
 soma = 0
 pares = 0
