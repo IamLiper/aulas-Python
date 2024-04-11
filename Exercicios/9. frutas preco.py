@@ -14,4 +14,3 @@ if fruta == "morango":
     peso = int(input("Digite quantos kg deseja comprar de morango: "))
     if peso <= 5:
         preco = precoMokg * peso
-
