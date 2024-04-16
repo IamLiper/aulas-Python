@@ -1,4 +1,4 @@
-import os
+i   mport os
 
 os.system("clear")
 
