@@ -6,7 +6,7 @@ for i in range(3):
     notas = float(input(f"Digite a {i+1}ª nota: "))
 
     while notas < 0 or notas > 10:
-        print("nota invalida!!")
+        print("informe uma nota válida entre 0 e 10!!")
         notas = float(input(f"Digite a {i+1}ª nota: "))
 
     soma += notas
