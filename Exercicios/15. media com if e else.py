@@ -16,7 +16,7 @@ media = soma / 3
 print(f"Média: {media:.1f}")
 if media > 7:
     print("Aprovado!")
-elif media > 5 or media < 9:
+elif media >= 5 or media < 9:
     print("Recuperção!")
 else:
     print("Reprovado!")
