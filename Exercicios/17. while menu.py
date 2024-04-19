@@ -24,10 +24,10 @@ while True:
             print (f"Quantidade de notas inseridas: {QtdNotas}\n")
 
     elif resposta == 'N':
+        media = soma / QtdNotas
+        print(f"Média: {media}")
         if QtdNotas == 0:
             print("Não foram inseridas notas. \n")
         else:
             print("Opção inválida... \n")
-    media = soma / QtdNotas
 
-    print(f"Média: {media}")
