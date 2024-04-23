@@ -3,10 +3,10 @@ os.system("cls || clear")
 
 valores = []
 
-for i in range (2):
-    valor = int(input(f"Digite o {i+1}º valor: "))
+for i in range (1, 7):
+    valor = int(input(f"Digite o {i}º valor: "))
     valores.append(valor)
-    if valor != int:
+    if valor < 0:
         valor = int(input("Digite um valor inteiro: "))
-    elif valor >= 0:
-    
+for i in range(6, 0, -1):
+    print(i)
