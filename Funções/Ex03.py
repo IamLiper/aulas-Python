@@ -18,4 +18,3 @@ numero2 = int(input("Digite o segundo números: "))
 
 print('Resultado:');
 caall(numero1, numero2);
-
