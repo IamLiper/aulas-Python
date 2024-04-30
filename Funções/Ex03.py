@@ -16,5 +16,5 @@ numero1 = int(input("Digite o primerio número: "))
 jungwoo()
 numero2 = int(input("Digite o segundo números: "))
 
-print('Resultado:');
-caall(numero1, numero2);
+print('Resultado:')
+caall(numero1, numero2)
