@@ -20,6 +20,18 @@ for i in range (QUANTIDADE_ALUNOS):
     alunos.append(aluno)
     os.system("clear")
 
+# Definindo arquivo para salvar os dados
+# inserido pelo usuário.
+arquivo = "alunos.txt"
+
+# Percorrendo o vetor e salvando os dados por linhas.
+with open(arquivo, "w") as arquivoDeAlunos:
+    for aluno in alunos:
+        arquivoDeAlunos.write(f"{aluno.nome}, {aluno.idade} \n")
+
+# Confirmando que os dados foram salvos.
+print("Dados salvos com sucesso.")
+
 for aluno in alunos:
     print(f"\nNome: {aluno.nome}")
     print(f"Idade: {aluno.idade}")
