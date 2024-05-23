@@ -14,7 +14,7 @@ class Livros:
     categoria: str
     preco: float
 
-QUANTIDADE_LIVROS = 1
+QUANTIDADE_LIVROS = 3
 
 livros = []
 
