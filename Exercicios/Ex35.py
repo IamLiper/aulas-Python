@@ -23,7 +23,7 @@ for i in range(QUANTIDADE_LIVROS):
     livros.append(livro)
     os.system("clear")
 
-arquivo = "Livros_arquivados.txt"
+arquivo = "Catálogo_Livros.txt"
 
 with open(arquivo, 'w') as arquivoDeLivros:
     for livro in livros:
