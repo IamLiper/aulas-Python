@@ -2,6 +2,11 @@ import os
 from dataclasses import dataclass
 os.system("clear")
 
+def ler_dados_catalogo():
+    with open(arquivo, "r") as arquivoDeLivros:
+        livrosCad = arquivoDeLivros.read()
+    print(livrosCad)
+
 @dataclass
 class Livros:
     nome: str
@@ -9,7 +14,7 @@ class Livros:
     categoria: str
     preco: float
 
-QUANTIDADE_LIVROS = 3
+QUANTIDADE_LIVROS = 1
 
 livros = []
 
@@ -31,6 +36,4 @@ with open(arquivo, 'w') as arquivoDeLivros:
 
 print("Dados do livro foram salvos!")
 
-with open(arquivo,"r") as arquivoImprime:
-    for livro in livros:
-        arquivoImprime.read()
+ler_dados_catalogo()
