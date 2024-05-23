@@ -1,3 +1,3 @@
-Nome: Diario de um Banana, Autor: Jefrey, Categoria: Comedia, Preço: 30.55 
-Nome: Diario de um Banana 2, Autor: Jefrey, Categoria: Comedia, Preço: 70.44 
-Nome: After, Autor: ???, Categoria: Romance, Preço: 80.0 
+Nome: bob, Autor: lipe, Categoria: kill, Preço: 1500.0 
+Nome: after, Autor: gabriela, Categoria: romance, Preço: 88.0 
+Nome: 50 tons de cinza, Autor: 15, Categoria: ???, Preço: 150.0 

@@ -31,8 +31,6 @@ with open(arquivo, 'w') as arquivoDeLivros:
 
 print("Dados do livro foram salvos!")
 
-for livro in livros:
-    print(f"\nNome: {livro.nome}")
-    print(f"Autor: {livro.autor}")
-    print(f"Categoria: {livro.categoria}")
-    print(f"Preço: {livro.preco}")
+with open(arquivo,"r") as arquivoImprime:
+    for livro in livros:
+        arquivoImprime.read()
