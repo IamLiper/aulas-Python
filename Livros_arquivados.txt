@@ -1,0 +1,3 @@
+Nome: kkk, Autor: aaa, Categoria: vc, Preço: 70.0 
+Nome: des, Autor: gra, Categoria: ca, Preço: 44.0 
+Nome: que?, Autor: lil, Categoria: visao, Preço: 68.0 

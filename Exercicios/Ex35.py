@@ -1,13 +1,38 @@
 import os
-os.system("cls")
-class Cliente:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+from dataclasses import dataclass
+os.system("clear")
 
-print("Solicitando dados para o usuário.")
+@dataclass
+class Livros:
+    nome: str
+    autor: str
+    categoria: str
+    preco: float
 
-cliente1 = Cliente("Marta", 20)
+QUANTIDADE_LIVROS = 3
 
-print(f"Nome: {cliente1.nome}")
-print(f"Idade: {cliente1.idade}")
+livros = []
+
+for i in range(QUANTIDADE_LIVROS):
+    livro = Livros(
+        nome = input("Digite o nome do livro: "),
+        autor = input("Digite o nome do autor: "),
+        categoria = input("Digite a categoria do livro: "),
+        preco = float(input("Digite o preço do livro: "))
+    )
+    livros.append(livro)
+    os.system("clear")
+
+arquivo = "Livros_arquivados.txt"
+
+with open(arquivo, 'w') as arquivoDeLivros:
+    for livro in livros:
+        arquivoDeLivros.write(f"Nome: {livro.nome}, Autor: {livro.autor}, Categoria: {livro.categoria}, Preço: {livro.preco} \n")
+
+print("Dados do livro foram salvos!")
+
+for livro in livros:
+    print(f"\nNome: {livro.nome}")
+    print(f"Autor: {livro.autor}")
+    print(f"Categoria: {livro.categoria}")
+    print(f"Preço: {livro.preco}")
