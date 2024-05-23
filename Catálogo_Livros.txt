@@ -1,0 +1,3 @@
+Nome: Diario de um Banana, Autor: Jefrey, Categoria: Comedia, Preço: 30.55 
+Nome: Diario de um Banana 2, Autor: Jefrey, Categoria: Comedia, Preço: 70.44 
+Nome: After, Autor: ???, Categoria: Romance, Preço: 80.0 
