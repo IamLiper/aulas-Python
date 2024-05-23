@@ -8,44 +8,43 @@ pygame.init()
 
 largura = 640
 altura = 480
-x = int(largura/2)
-y = int(altura/2)
+x_snake = int(largura/2)
+y_snake = int(altura/2)
 
-x_azul = randint(40, 600)
-y_azul = randint(50, 430)
+x_maca = randint(40, 600)
+y_maca = randint(50, 430)
 
 pontos = 0
-
-fonte = pygame.font.SysFont('arial', 40, bold= True, italic= True)
+fonte = pygame.font.SysFont('arial', 40, bold=True, italic=True)
 
 tela = pygame.display.set_mode((largura, altura))
-pygame.display.set_caption('Snake Game 1.0')
+pygame.display.set_caption('Snake Game 0.1')
 relogio = pygame.time.Clock()
 
 while True:
-    relogio.tick(100)
-    tela.fill((0,0,0))
+    relogio.tick(60)
+    tela.fill((255,255,255))
     mensagem = f'Pontos: {pontos}'
-    texto_formatado = fonte.render(mensagem, True, (255,255,255))
+    texto_formatado = fonte.render(mensagem, True, (0,0,0))
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
             exit()
         if pygame.key.get_pressed()[K_a]:
-            x = x - 20
+            x_snake = x_snake - 20
         if pygame.key.get_pressed()[K_d]:
-            x = x + 20
+            x_snake = x_snake + 20
         if pygame.key.get_pressed()[K_w]:
-            y = y - 20
+            y_snake = y_snake - 20
         if pygame.key.get_pressed()[K_s]:
-            y = y + 20
+            y_snake = y_snake + 20
         
-    ret_vermelho = pygame.draw.rect(tela, (255,0,0), (x,y,40,50))
-    ret_azul = pygame.draw.rect(tela, (0,0,255), (x_azul,y_azul,40,50))
+    snake = pygame.draw.rect(tela, (0,255,0), (x_snake,y_snake,20,20))
+    maca = pygame.draw.rect(tela, (255,0,0), (x_maca,y_maca,20,20))
 
-    if ret_vermelho.colliderect(ret_azul):
-        x_azul = randint(40, 600)
-        y_azul = randint(50, 430)
+    if snake.colliderect(maca):
+        x_maca = randint(40, 600)
+        y_maca = randint(50, 430)
         pontos = pontos + 1
 
     tela.blit(texto_formatado, (450,40))
